@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Molecules/Header';
+import { Box, Typography } from './Components/Primitives';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Box>
+        <Typography>
+          I’m helping build affordable,
+          quality healthcare experiences for India at <em>Clinikk</em> in Bangalore.
+        </Typography>
+      </Box>
     </div>
   );
 }

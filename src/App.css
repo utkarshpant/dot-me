@@ -1,5 +1,27 @@
 .App {
-  text-align: center;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  --content-width: 50vw;
+}
+
+.Header {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .Header {
+    width: var(--content-width);
+  }
+}
+
+.Content {
+  width: 50%;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .App-logo {
