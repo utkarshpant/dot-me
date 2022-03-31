@@ -19,6 +19,12 @@ const Strong  = styled.strong({
   fontSize: '12pt',
   fontWeight: '500',
   lineHeight: '20pt',
+  padding: '0.5vh',
+  borderRadius: '16px',
+  transition: 'background 0.5s',
+  ':hover': {
+    background: '#BEEE62',
+  }
 });
 
 /**
