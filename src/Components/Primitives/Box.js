@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 const Box = styled.div`
-  --content-width: 60%;
+  --content-width: 50%;
   display: flex;
   width: 100%;
+  margin-top: 5vh;
   @media (min-width: 768px) {
     width: var(--content-width);
   }

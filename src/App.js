@@ -12,6 +12,13 @@ function App() {
           quality healthcare experiences for India at <em>Clinikk</em> in Bangalore.
         </Typography>
       </Box>
+      <Box>
+        <Typography>
+          I’m super interested in banking and healthcare, and want to build
+          better software in these spaces to help technology become
+          more accessible for <strong>everybody.</strong>
+        </Typography>
+      </Box>
     </div>
   );
 }

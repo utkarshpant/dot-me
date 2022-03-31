@@ -14,6 +14,13 @@ const Emphasis = styled.em({
   lineHeight: '20pt',
 });
 
+const Strong  = styled.strong({
+  fontFamily: 'Inter',
+  fontSize: '12pt',
+  fontWeight: '500',
+  lineHeight: '20pt',
+});
+
 /**
  * Renders typography as the `p` element.
  */
@@ -24,9 +31,13 @@ function TypographyComponent(props) {
       <Typography>
         {
           React.Children.map(children, child => {
-            return child.type === 'em'
-              ? <Emphasis>{child}</Emphasis>
-              : child
+            if (child.type === 'em') {
+              return <Emphasis>{child}</Emphasis>
+            }
+            if (child.type === 'strong') {
+              return <Strong>{child}</Strong>
+            }
+            return child;
           })
         }
       </Typography>
